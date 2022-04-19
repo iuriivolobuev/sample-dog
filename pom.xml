@@ -54,10 +54,8 @@
                     <executions>
                         <execution>
                             <id>default-compile</id>
-                            <configuration>
-                                <!--set it to true to skip compiling main sources-->
-                                <skipMain>false</skipMain>
-                            </configuration>
+                            <!--uncomment next line to cancel the execution-->
+                            <!--<phase>none</phase>-->
                         </execution>
                     </executions>
                 </plugin>
