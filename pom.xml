@@ -51,27 +51,6 @@
                         <release>${targetJdk}</release>
                         <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
-                    <executions>
-                        <execution>
-                            <id>default-compile</id>
-                            <!--uncomment next line to cancel the execution-->
-                            <!--<phase>none</phase>-->
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.12.4</version>
-                    <executions>
-                        <execution>
-                            <!--for demo purposes, will be skipped, since execution of surefire plugin will have already been run for this configuration-->
-                            <id>default-test2</id>
-                            <phase>test</phase>
-                            <goals>
-                                <goal>test</goal>
-                            </goals>
-                        </execution>
-                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
