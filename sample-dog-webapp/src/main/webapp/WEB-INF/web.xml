@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <listener>
+        <listener-class>servlet.HelloWorldServletContextListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>helloWorldServlet</servlet-name>
+        <servlet-class>servlet.HelloWorldServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>helloWorldServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>filterA</filter-name>
+        <filter-class>servlet.ServletFilterA</filter-class>
+    </filter>
+    <filter>
+        <filter-name>filterB</filter-name>
+        <filter-class>servlet.ServletFilterB</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>filterA</filter-name>
+        <servlet-name>helloWorldServlet</servlet-name>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>filterB</filter-name>
+        <servlet-name>helloWorldServlet</servlet-name>
+    </filter-mapping>
+</web-app>
