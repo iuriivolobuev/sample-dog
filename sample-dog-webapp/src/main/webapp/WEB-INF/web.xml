@@ -10,10 +10,18 @@
         <servlet-name>helloWorldServlet</servlet-name>
         <servlet-class>servlet.HelloWorldServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>withDelayServlet</servlet-name>
+        <servlet-class>servlet.WithDelayServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>helloWorldServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>withDelayServlet</servlet-name>
+        <url-pattern>/with-delay</url-pattern>
     </servlet-mapping>
 
     <filter>

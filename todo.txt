@@ -1,0 +1,9 @@
+- current step: https://github.com/qala-io/java-course/blob/master/docs/programme/web-apps.md#step-5---memory-leaks
+
+- concurrency.TomcatClient.main:
+    - when run first time, more than expected connections are failed
+    - strange delays between chunks
+- concurrency.WebServer.ProcessRequestTask.run: response isn't blocked by Thread.sleep invocation
+- ThreadPoolFixedSize: review busy spin with invoking poll method
+- add logger
+- switch servlets to use classes from Jakarta package
